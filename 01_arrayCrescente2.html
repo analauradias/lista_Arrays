@@ -4,11 +4,17 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
-
+    const numero1 = Number(prompt(`Insira um número`).trim());
+    const numero2 = Number(prompt(`Insira outro número`).trim());
 
     //PROCESSAMENTO
-
-
+    let numero = []
+   if(numero1>numero2){
+        numero = [numero2, numero1];
+   }
+   else{
+    numero = [numero1, numero2] ;
+   }
     //SAÍDA
-    
+    alert(numero.join(' - '))
 </script>
