@@ -6,10 +6,17 @@
     //Apresente para o usuário se a LETRA que ele quer procurar existe ou não na palavra digitada e qual a primeira posição da LETRA na PALAVRA.
 
     //ENTRADA
-
+    const palavra = prompt(`Insira UMA palavra`).trim();
+    const letra = prompt(`Insira uma letra`).trim();
 
     //PROCESSAMENTO
-
+    const procurando = palavra.search(letra);
+    if(procurando >= 0){
+        alert(`A letra ${letra} foi encontrada na palavra ${palavra} e está na posição ${procurando}.`);
+    }
+    else {
+        alert(`A letra ${letra} não foi encontrada na palavra ${palavra}`);
+    }
 
     //SAÍDA
 
